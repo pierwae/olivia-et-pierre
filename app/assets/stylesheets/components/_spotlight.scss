@@ -262,7 +262,7 @@
 				top: 0;
 				left: 0;
 				width: 100%;
-				height: 100%;
+				max-height: 100%;
 				border-radius: 0;
 			}
 		}
@@ -296,6 +296,10 @@
 			.content {
 				@include padding(_size(padding, small) * 1.25, _size(padding, small));
 			}
+
+      .image {
+        display: none;  // AJOUT
+      }
 
 			@include orientation(portrait) {
 				@include vendor('flex-direction', 'column-reverse');
