@@ -1,4 +1,4 @@
-class PagesController < ApplicationController
+class En::PagesController < ApplicationController
   def home
     if params[:saved].nil?
       required_params = 'nil'

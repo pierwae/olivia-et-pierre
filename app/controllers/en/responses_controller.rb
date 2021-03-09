@@ -1,6 +1,4 @@
-class ResponsesController < ApplicationController
-  # skip_before_action :verify_authenticity_token
-
+class En::ResponsesController < ApplicationController
   def new
     if params[:saved].nil?
       required_params = 'nil'
