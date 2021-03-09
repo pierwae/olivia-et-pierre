@@ -30,6 +30,6 @@ class En::ResponsesController < ApplicationController
     response = Response.new(required_params)
     response.presence = required_params[:presence] == 'Je serai présent(e) lors de la soirée !'
     ResponseMailer.with(required_params).send_data.deliver_later if response.save
-    redirect_to "/fiesta?saved=#{response.save}#first"
+    redirect_to "/en/fiesta?saved=#{response.save}#first"
   end
 end

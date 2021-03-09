@@ -37,7 +37,7 @@
               </header>
               <div class="content">
 
-                <%= simple_form_for @response, url: '/responses', input_html: { class: "fields"}, method: 'post' do |f| %>
+                <%= simple_form_for @response, url: '/en/responses', input_html: { class: "fields"}, method: 'post' do |f| %>
                   <%= f.error_notification %>
                   <div class='fields'>
                     <div class='field half'>
@@ -73,6 +73,10 @@
           </div>
         </div>
       </section>
+  </div>
+
+  <div class='pop-position'>
+    <%= render partial: 'shared/enpopup' =%>
   </div>
 
 <!-- Scripts -->

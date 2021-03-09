@@ -30,7 +30,7 @@
           <h2 class='white-custom-text'>Important : COVID-19</h2>
           <p class='white-custom-text'>Afin de rester informer des dernières nouvelles concernant l’organisation du mariage dans le respect des règles sanitaires, renseignez vos coordonnés, nous vous tiendrons au courant. Rassurez-vous, vous inscrire ici ne vous engage en rien !</p>
 
-          <%= simple_form_for @subscription, url: '/subscriptions', input_html: { class: "fields"}, method: 'post' do |f| %>
+          <%= simple_form_for @subscription, url: '/en/subscriptions', input_html: { class: "fields"}, method: 'post' do |f| %>
             <%= f.error_notification %>
             <div class='fields'>
               <div class='field half white-custom-text'>
@@ -108,6 +108,10 @@
         </div>
       </footer>
 
+  </div>
+
+  <div class='pop-position'>
+    <%= render partial: 'shared/enpopup' =%>
   </div>
 
 <!-- Scripts -->

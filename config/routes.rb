@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   get 'fiesta', to: 'responses#new', as: :fiesta
   get 'en/fiesta', to: 'en/responses#new'
   post 'responses', to: 'responses#create'
+  post 'en/responses', to: 'en/responses#create'
   post 'subscriptions', to: 'subscriptions#create'
+  post 'en/subscriptions', to: 'en/subscriptions#create'
 end
