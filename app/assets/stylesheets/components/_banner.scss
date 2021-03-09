@@ -832,7 +832,7 @@
 		@include vendor('align-items', 'center');
 		@include vendor('display', 'flex');
 		@include vendor('justify-content', 'center');
-		background-color: inherit;
+		background-color: rgba(0, 0, 0, .75) !important;
 		position: relative;
 		text-align: center;
 		overflow-x: hidden;
