@@ -8,6 +8,8 @@ gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary'
+gem 'rails_admin', '~> 2.0'
+gem 'devise'
 
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 gem 'pg', '>= 0.18', '< 2.0'
