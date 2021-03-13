@@ -6,6 +6,7 @@ class ResponseMailer < ApplicationMailer
     @presence   = params[:presence]
     @allergies  = params[:allergies]
     @note       = params[:note]
-    mail(to: '0f4hsgw8responses@robot.zapier.com', subject: "Réponse de #{@first_name} #{@last_name}")
+    @language   = params[:language]
+    mail(to: ENV['ZAPIER_RESPONSE'], subject: "Réponse de #{@first_name} #{@last_name}")
   end
 end

@@ -45,6 +45,7 @@
                 <%= f.input :email, label:'Adresse mail', input_html: { class: 'white-custom-text white-custom-border'} %>
                 <div style='color: red;' class=<%= @error %> >*Ce champ est obligatoire</div>
               </div>
+                <%= f.input :language, as: :hidden, input_html: { value: 'EN' } %>
             </div>
             <div class='actions'>
               <%= f.button :submit, value: "M'INSCRIRE À LA NEWSLETTER", id: 'very-white-custom-text' %>

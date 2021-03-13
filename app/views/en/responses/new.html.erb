@@ -62,6 +62,7 @@
                     <div class='field'>
                       <%= f.input :note, as: :text, label:'Un petit message pour les mariés ?' , input_html: { rows: 1 } %>
                     </div>
+                      <%= f.input :language, as: :hidden, input_html: { value: 'EN' } %>
                   </div>
                   <div class='actions'>
                     <%= f.button :submit, value: 'Envoyer !', id: 'submit-btn', class: "button primary" %>

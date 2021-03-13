@@ -3,6 +3,7 @@ class SubscriptionMailer < ApplicationMailer
     @first_name = params[:first_name]
     @last_name  = params[:last_name]
     @email      = params[:email]
-    mail(to: '0xnyut24subscriptions@robot.zapier.com', subject: "Inscription de #{@first_name} #{@last_name}")
+    @language   = params[:language]
+    mail(to: ENV['ZAPIER_SUBSCRIPTION'], subject: "Inscription de #{@first_name} #{@last_name}")
   end
 end
