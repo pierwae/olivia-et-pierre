@@ -435,7 +435,8 @@
 				width: ($image-size * 0.75);
 				height: ($image-size * 0.75);
 				margin: 0 (_size(element-margin) * 1) _size(element-margin) 0;
-			}
+			  display: none;  // AJOUT
+      }
 		}
 
 		@include orientation(portrait) {

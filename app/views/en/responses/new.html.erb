@@ -10,11 +10,11 @@
         </div>
         <div class="content">
           <h1>The festivities aren’t over!</h1>
-          <p class='major'>Vous êtes chaleureusement invités à poursuivre la journée avec nous au cours d'une soirée festive.</p>
-          <p>À savoir : L'organisation de la soirée sera susceptible d'évoluer en fonction des contraintes sanitaires.</p>
-          <p><i>À 19h &ndash; Salle communale, 2 Route de la Biolle, 73200 Pallud</i></p>
+          <p class='major'>You are cordially invited to spend the evening with us at a  festive dinner.</p>
+          <p><b style='color: red;'>Please note that the organisation of this event may differ according to health restrictions.</b></p>
+          <p><i>At 7:30 pm &ndash; Salle communale, 2 Route de la Biolle, 73200 Pallud</i></p>
           <ul class="actions stacked">
-            <li><a href="#first" class="button large wide smooth-scroll-middle">Je donne ma réponse !</a></li>
+            <li><a href="#first" class="button large wide smooth-scroll-middle">Here's my answer!</a></li>
           </ul>
         </div>
         <div class="image">
@@ -25,15 +25,15 @@
 
       <section id='first' class="wrapper style1 align-center">
         <div class="inner">
-          <h2>Réponse</h2>
-          <p>Important : remplissez le formulaire pour chaque invité !</p>
-          <p>A savoir : les enfants ne sont pas invités à la soirée, il n'y aura pas de garderie organisée.<br>
-          Pour toute question ou cas particulier, n'hésitez pas à nous contacter : mariage@oliviaetpierre.com</p>
+          <h2>Reply</h2>
+          <p>Important : Fill in a form for each invitee!</p>
+          <p>This being an all-adult event, childcare will not be available.<br>
+         Please do not hesitate to contact us should you have any questions or concerns: <b><a href='mailto:mariage@oliviaetpierre.com'>mariage@oliviaetpierre.com</a></b></p>
           <div class="index align-left">
 
             <section>
               <header>
-                <h3>Formulaire</h3>
+                <h3>Form</h3>
               </header>
               <div class="content">
 
@@ -41,31 +41,31 @@
                   <%= f.error_notification %>
                   <div class='fields'>
                     <div class='field half'>
-                      <%= f.input :first_name, label: 'Prénom' %>
+                      <%= f.input :first_name, label: 'First name' %>
                       <div style='color: red;' class=<%= @error %> >*Ce champ est obligatoire</div>
                     </div>
                     <div class='field half'>
-                      <%= f.input :last_name, label: 'Nom' %>
+                      <%= f.input :last_name, label: 'Surname' %>
                       <div style='color: red;' class=<%= @error %> >*Ce champ est obligatoire</div>
                     </div>
                     <div class='field'>
-                      <%= f.input :email, label:'Adresse mail' %>
+                      <%= f.input :email, label:'Email address' %>
                       <div style='color: red;' class=<%= @error %> >*Ce champ est obligatoire</div>
                     </div>
                     <div class='field'>
-                      <%= f.input :presence, collection: ["Je serai présent(e) lors de la soirée !", "Malheureusement je ne pourrai pas être des vôtres."], label:'Réponse', include_blank: false %>
+                      <%= f.input :presence, collection: ["I will attend this event!", "To my regret, I will not be able to attend."], label:'Reply', include_blank: false %>
                       <div style='color: red;' class=<%= @error %> >*Ce champ est obligatoire</div>
                     </div>
                     <div class='field'>
-                      <%= f.input :allergies, as: :text, label:'Allergies alimentaires' , input_html: { rows: 1 } %>
+                      <%= f.input :allergies, as: :text, label:'Allergies' , input_html: { rows: 1 } %>
                     </div>
                     <div class='field'>
-                      <%= f.input :note, as: :text, label:'Un petit message pour les mariés ?' , input_html: { rows: 1 } %>
+                      <%= f.input :note, as: :text, label:'A message for the newlyweds-to-be?' , input_html: { rows: 1 } %>
                     </div>
                       <%= f.input :language, as: :hidden, input_html: { value: 'EN' } %>
                   </div>
                   <div class='actions'>
-                    <%= f.button :submit, value: 'Envoyer !', id: 'submit-btn', class: "button primary" %>
+                    <%= f.button :submit, value: 'Send!', id: 'submit-btn', class: "button primary" %>
                   </div>
                 <% end %>
 
