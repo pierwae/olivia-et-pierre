@@ -92,7 +92,7 @@
   width: 100vw;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .flag {
@@ -102,4 +102,22 @@
   text-decoration: none !important;
 }
 
+.menu-link {
+  z-index: 1000000;
+  font-size: 0.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 0.125em;
+  padding-left: 15px;
+  text-decoration: none !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.flex-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}

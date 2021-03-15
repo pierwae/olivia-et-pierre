@@ -4,6 +4,9 @@
     <!-- Banner -->
       <section class="flex-custom2 banner onload-content-fade-right style5 fullscreen content-align-center image-position-center invert" style='padding-top: 0;'>
         <div class='custom-header'>
+          <a class='menu-link' href="">
+            <u></u>
+          </a>
           <a class='flag' href="/">
             🇫🇷
           </a>
@@ -35,15 +38,15 @@
             <div class='fields'>
               <div class='field half white-custom-text'>
                 <%= f.input :first_name, label: 'First name', input_html: { class: 'white-custom-text white-custom-border'} %>
-                <div style='color: red;' class=<%= @error %> >*Ce champ est obligatoire</div>
+                <div style='color: red;' class=<%= @error %> >*This field is required.</div>
               </div>
               <div class='field half white-custom-text'>
                 <%= f.input :last_name, label: 'Surname', input_html: { class: 'white-custom-text white-custom-border'} %>
-                <div style='color: red;' class=<%= @error %> >*Ce champ est obligatoire</div>
+                <div style='color: red;' class=<%= @error %> >*This field is required.</div>
               </div>
               <div class='field white-custom-text'>
                 <%= f.input :email, label:'Email address', input_html: { class: 'white-custom-text white-custom-border'} %>
-                <div style='color: red;' class=<%= @error %> >*Ce champ est obligatoire</div>
+                <div style='color: red;' class=<%= @error %> >*This field is required.</div>
               </div>
                 <%= f.input :language, as: :hidden, input_html: { value: 'EN' } %>
             </div>
@@ -61,7 +64,7 @@
           <h2>Wedding gift list</h2>
           <p>If you wish to give a small gift, please consult the wedding gift list and make a contribution. Thank you !</p>
           <ul class="actions stacked">
-            <li><a href="#" class="button">Discover our wedding gift list</a></li>
+            <li><a href="https://www.mariages.net/web/W4383094/listedemariage--l6" target="_blank" class="button">Discover our wedding gift list</a></li>
           </ul>
         </div>
         <div class="image">
@@ -101,12 +104,11 @@
 
       <section style="padding-bottom: 0; padding-top: 35px;" class="spotlight onscroll-image-fade-in style2 orient-right content-align-left image-position-center onscroll-image-fade-in">
         <div class="content">
-          <h2>Soirée festive</h2>
-          <p>La fête se poursuit avec la famille des mariés et quelques amis proches.</br>
-            <b>Vous avez reçu un carton d'invitation pour la soirée ?</br>
-            Donnez-nous votre réponse avant le 15 avril.</b></p>
+          <h2>Festive Evening</h2>
+          <p>Celebrations continue with the newlyweds' families and a few close friends.</br>
+            <b>If you have received an invitation to the festive evening, please let us have your answer before April 15th.</b></p>
           <ul class="actions stacked">
-            <li><a href="/en/fiesta" class="button">Donner ma réponse</a></li>
+            <li><a href="/en/fiesta" class="button">My Answer</a></li>
           </ul>
         </div>
         <div class="image">

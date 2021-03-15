@@ -4,6 +4,12 @@
     <!-- Banner -->
       <section class="flex-custom2 banner onload-image-fade-in onload-content-fade-right - style2 fullscreen orient-center content-align-center image-position-center color-add-1" style='padding-top: 0;'>
         <div class='custom-header'>
+          <a class='menu-link' href="/">
+            <div class='flex-line'>
+              <i class="fas fa-angle-left" style='line-height: unset !important;'></i>
+              <div style='padding-left: 4px;'>Home page</div>
+            </div>
+          </a>
           <a class='flag' href="/fiesta">
             🇫🇷
           </a>
@@ -42,19 +48,19 @@
                   <div class='fields'>
                     <div class='field half'>
                       <%= f.input :first_name, label: 'First name' %>
-                      <div style='color: red;' class=<%= @error %> >*Ce champ est obligatoire</div>
+                      <div style='color: red;' class=<%= @error %> >*This field is required.</div>
                     </div>
                     <div class='field half'>
                       <%= f.input :last_name, label: 'Surname' %>
-                      <div style='color: red;' class=<%= @error %> >*Ce champ est obligatoire</div>
+                      <div style='color: red;' class=<%= @error %> >*This field is required.</div>
                     </div>
                     <div class='field'>
                       <%= f.input :email, label:'Email address' %>
-                      <div style='color: red;' class=<%= @error %> >*Ce champ est obligatoire</div>
+                      <div style='color: red;' class=<%= @error %> >*This field is required.</div>
                     </div>
                     <div class='field'>
                       <%= f.input :presence, collection: ["I will attend this event!", "To my regret, I will not be able to attend."], label:'Reply', include_blank: false %>
-                      <div style='color: red;' class=<%= @error %> >*Ce champ est obligatoire</div>
+                      <div style='color: red;' class=<%= @error %> >*This field is required.</div>
                     </div>
                     <div class='field'>
                       <%= f.input :allergies, as: :text, label:'Allergies' , input_html: { rows: 1 } %>

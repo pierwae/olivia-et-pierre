@@ -5,7 +5,7 @@ class SubscriptionsController < ApplicationController
                                                            :email,
                                                            :language)
     subscription = Subscription.new(required_params)
-    SubscriptionMailer.with(required_params).send_data.deliver_later if subscription.save
+    SubscriptionMailer.with(subscription).send_data.deliver_later if subscription.save
     redirect_to "/?saved=#{subscription.save}#first"
   end
 end
