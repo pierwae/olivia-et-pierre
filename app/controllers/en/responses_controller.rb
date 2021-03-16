@@ -29,7 +29,7 @@ class En::ResponsesController < ApplicationController
                                                        :allergies,
                                                        :language)
     response = Response.new(required_params)
-    response.presence = required_params[:presence] == 'I will attend this event!'
+    response.presence = required_params[:presence] == 'We will attend this event!'
     ResponseMailer.with(response: response, language: required_params[:language]).send_data.deliver_later if response.save
     redirect_to "/en/fiesta?saved=#{response.save}#first"
   end

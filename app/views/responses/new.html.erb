@@ -32,9 +32,9 @@
       <section id='first' class="wrapper style1 align-center">
         <div class="inner">
           <h2>Réponse</h2>
-          <p><b>Important : remplissez un formulaire par invité !</b></p>
           <p>À savoir : les enfants ne sont pas invités à la soirée, il n'y aura pas de garderie organisée.<br>
           Pour toute question ou cas particulier, n'hésitez pas à nous contacter : <b><a href='mailto:mariage@oliviaetpierre.com'>mariage@oliviaetpierre.com</a></b></p>
+          <p><i>Remplissez dans la mesure du possible un formulaire par carton d'invitation reçu.</i></p>
           <div class="index align-left">
 
             <section>
@@ -47,19 +47,19 @@
                   <%= f.error_notification %>
                   <div class='fields'>
                     <div class='field half'>
-                      <%= f.input :first_name, label: 'Prénom' %>
+                      <%= f.input :first_name, label: 'Prénoms', input_html: { placeholder: 'Roméo + Juliette' } %>
                       <div style='color: red;' class=<%= @error %> >*Ce champ est obligatoire</div>
                     </div>
                     <div class='field half'>
-                      <%= f.input :last_name, label: 'Nom' %>
+                      <%= f.input :last_name, label: 'Nom', input_html: { placeholder: 'Montaigu' } %>
                       <div style='color: red;' class=<%= @error %> >*Ce champ est obligatoire</div>
                     </div>
                     <div class='field'>
-                      <%= f.input :email, label:'Adresse mail' %>
+                      <%= f.input :email, label:'Adresse mail', input_html: { placeholder: 'roro.montaigu@hotmail.com' } %>
                       <div style='color: red;' class=<%= @error %> >*Ce champ est obligatoire</div>
                     </div>
                     <div class='field'>
-                      <%= f.input :presence, collection: ["Je serai présent(e) lors de la soirée !", "Malheureusement je ne pourrai pas être des vôtres."], label:'Réponse', include_blank: false %>
+                      <%= f.input :presence, collection: ["Nous serons présents lors de la soirée !", "Malheureusement nous ne pourrons pas être des vôtres."], label:'Réponse', include_blank: false %>
                       <div style='color: red;' class=<%= @error %> >*Ce champ est obligatoire</div>
                     </div>
                     <div class='field'>

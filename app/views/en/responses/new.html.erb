@@ -4,7 +4,7 @@
     <!-- Banner -->
       <section class="flex-custom2 banner onload-image-fade-in onload-content-fade-right - style2 fullscreen orient-center content-align-center image-position-center color-add-1" style='padding-top: 0;'>
         <div class='custom-header'>
-          <a class='menu-link' href="/">
+          <a class='menu-link' href="/en">
             <div class='flex-line'>
               <i class="fas fa-angle-left" style='line-height: unset !important;'></i>
               <div style='padding-left: 4px;'>Home page</div>
@@ -32,9 +32,9 @@
       <section id='first' class="wrapper style1 align-center">
         <div class="inner">
           <h2>Reply</h2>
-          <p>Important : Fill in a form for each invitee!</p>
           <p>This being an all-adult event, childcare will not be available.<br>
-         Please do not hesitate to contact us should you have any questions or concerns: <b><a href='mailto:mariage@oliviaetpierre.com'>mariage@oliviaetpierre.com</a></b></p>
+          Please do not hesitate to contact us should you have any questions or concerns: <b><a href='mailto:mariage@oliviaetpierre.com'>mariage@oliviaetpierre.com</a></b></p>
+          <p><i>Remplissez dans la mesure du possible un formulaire par carton d'invitation reçu.</i></p>
           <div class="index align-left">
 
             <section>
@@ -47,19 +47,19 @@
                   <%= f.error_notification %>
                   <div class='fields'>
                     <div class='field half'>
-                      <%= f.input :first_name, label: 'First name' %>
+                      <%= f.input :first_name, label: 'First names', input_html: { placeholder: 'Roméo + Juliette' } %>
                       <div style='color: red;' class=<%= @error %> >*This field is required.</div>
                     </div>
                     <div class='field half'>
-                      <%= f.input :last_name, label: 'Surname' %>
+                      <%= f.input :last_name, label: 'Surname', input_html: { placeholder: 'Montaigu' } %>
                       <div style='color: red;' class=<%= @error %> >*This field is required.</div>
                     </div>
                     <div class='field'>
-                      <%= f.input :email, label:'Email address' %>
+                      <%= f.input :email, label:'Email address', input_html: { placeholder: 'roro.montaigu@hotmail.com' } %>
                       <div style='color: red;' class=<%= @error %> >*This field is required.</div>
                     </div>
                     <div class='field'>
-                      <%= f.input :presence, collection: ["I will attend this event!", "To my regret, I will not be able to attend."], label:'Reply', include_blank: false %>
+                      <%= f.input :presence, collection: ["We will attend this event!", "To our regret, we will not be able to attend."], label:'Reply', include_blank: false %>
                       <div style='color: red;' class=<%= @error %> >*This field is required.</div>
                     </div>
                     <div class='field'>
